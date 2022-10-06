@@ -1,85 +1,309 @@
-<!-- footer-area -->
-<footer class="dark-bg pt-55 pb-80">
-    <div class="container">
-        <div class="footer-top-wrap">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="img/logo/w_logo.png" alt=""></a>
-                    </div>
+<div class="footer">
+    <div class="grid wide">
+        <div class="row">
+            <!-- Footer Areas -->
+            <div class="col l-4 l-4-m m-5 c-10 l-o-0 l-o-0-m c-o-1 m-o-1">
+                <div class="footer__heading">
+                    <i class="footer__heading-icon fas fa-map-marker-alt"></i>
+                    Hệ thống cửa hàng
                 </div>
+                <ul class="footer-areas">
+                    <li class="footer-area__item">
+                        <h3 class="footer-area__heading">Hà Nội</h3>
+                        <ul class="footer-places">
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    120 Thái Hà, Q. Đống Đa
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">097.120.6688</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">0969.120.120</a>
+                                </div>
+                            </li>
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    398 Cầu Giấy, Q. Cầu Giấy
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">096.1111.398</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">096.2222.398</a>
+                                </div>
+                            </li>
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    42 Phố Vọng, Hai Bà Trưng
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">0979.884242</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">0338.424242</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-area__item">
+                        <h3 class="footer-area__heading">Hồ Chí Minh</h3>
+                        <ul class="footer-places">
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    123 Trần Quang Khải, Q.1
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">0965.123.123</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">0969.520.520</a>
+                                </div>
+                            </li>
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    602 Lê Hồng Phong, P.10, Q.10
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">097.1111.602</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">097.3333.602</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-area__item">
+                        <h3 class="footer-area__heading">Đà Nẵng</h3>
+                        <ul class="footer-places">
+                            <li class="footer-place__item">
+                                <div class="footer-place__item-location">
+                                    97 Hàm Nghi, Q.Thanh Khê
+                                    <a href="#" class="footer-place__item-link footer-place__item-link--highlight">| Xem
+                                        bản đồ</a>
+                                </div>
+                                <div class="footer-place__item-contact">
+                                    Điện thoại:
+                                    <a href="#" class="footer-place__item-link">096.123.9797</a>
+                                    -
+                                    <a href="#" class="footer-place__item-link">097.123.9797</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="footer-middle-wrap">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-link-wrap">
-                        <nav class="menu-links">
-                            <ul>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li><a href="shop-sidebar.html">Store</a></li>
-                                <li><a href="#">Locations</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="contact.html">Support</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Faqs</a></li>
-                            </ul>
-                        </nav>
-                        <div class="footer-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+
+            <!-- Footer Policy -->
+            <div class="col l-4 l-4-m m-5 c-10 l-o-0 l-o-0-m c-o-1 m-o-1">
+                <div class="footer__heading">
+                    <i class="footer__heading-icon far fa-question-circle"></i>
+                    Quy định - chính sách
                 </div>
+
+                <ul class="footer-policy__list">
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Chính sách bảo hành</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Chính sách vận chuyển</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Chính sách đổi trả hàng</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Chính sách bảo mật thông tin</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Hướng dẫn thanh toán</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Hướng dẫn mua hàng Online</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Dịch vụ Ship COD Toàn quốc</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Chính sách đại lý linh, phụ kiện</a>
+                    </li>
+                    <li class="footer-policy__item">
+                        <a href="#" class="footer-policy__link">Sitemap</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="copyright-wrap">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="copyright-text">
-                        <p>&copy; 2021 <a href="index.html">adara</a>. All Rights Reserved | Ph (+09) 456 457869</p>
-                    </div>
+
+            <!-- Footer Subscribe -->
+            <div class="col l-4 l-4-m m-5 c-10 l-o-0 l-o-0-m c-o-1 m-o-1">
+                <div class="footer__heading">
+                    <i class="footer__heading-icon far fa-envelope"></i>
+                    Đăng ký nhận bảng tin
                 </div>
-                <div class="col-lg-6">
-                    <div class="pay-method-img">
-                        <img src="img/images/payment_method_img.png" alt="">
-                    </div>
+
+                <div class="footer-mail">
+                    <form action="">
+                        <input type="text" required placeholder="Nhập email của bạn..." name="" id=""
+                            class="footer-mail__input">
+                        <button class="footer-mail__btn">Gửi</button>
+                    </form>
                 </div>
+
+                <div class="footer-linked">
+                    <h3 class="footer-linked__heading">
+                        <i class="footer-linked__icon fas fa-link"></i>
+                        Liên kết
+                    </h3>
+
+                    <ul class="footer-associates">
+                        <li class="footer-associate__item">
+                            <i class="footer-associate__icon footer-associate__icon--facebook fab fa-facebook"></i>
+                            <a href="https://www.facebook.com/profile.php?id=100035256339240" target="_blank"
+                                class="footer-associate__link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer-associate__item">
+                            <i class="footer-associate__icon footer-associate__icon--youtube fab fa-youtube"></i>
+                            <a href="https://www.youtube.com/watch?v=RvbdOpO6psc&list=RDMMRvbdOpO6psc&start_radio=1"
+                                target="_blank" class="footer-associate__link">
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-certification"></div>
+                <div class="footer-power"></div>
             </div>
         </div>
     </div>
-</footer>
-<!-- footer-area-end -->
 
+    <div class="footer-text">© 2021. MobileCity - Nguyễn Trường Anh</div>
 
+    <ul class="footer-nav-mobile__list">
+        <li class="footer-nav-mobile__item">
+            <a href="#" class="footer-nav-mobile__link">
+                <i class="footer-nav-mobile__icon fas fa-home"></i>
+                <span class="footer-nav-mobile__title">Trang chủ</span>
+            </a>
+        </li>
+        <li class="footer-nav-mobile__item">
+            <a href="#" class="footer-nav-mobile__link">
+                <i class="footer-nav-mobile__icon fas fa-shopping-cart"></i>
+                <span class="footer-nav-mobile__title">Giỏ hàng</span>
+                <span class="footer-nav-mobile__number">0</span>
+            </a>
+        </li>
+        <li class="footer-nav-mobile__item">
+            <a href="#" class="footer-nav-mobile__link">
+                <i class="footer-nav-mobile__icon fas fa-bell"></i>
+                <span class="footer-nav-mobile__title">Thông báo</span>
+                <span class="footer-nav-mobile__number">0</span>
+            </a>
+        </li>
+        <li class="footer-nav-mobile__item">
+            <a href="#" class="footer-nav-mobile__link">
+                <i class="footer-nav-mobile__icon fas fa-user"></i>
+                <span class="footer-nav-mobile__title">Tài khoản</span>
+            </a>
+        </li>
+    </ul>
+</div>
 
+<!-- Button -->
+<a href="#" class="go-to-top">
+    <i class="go-to-top__icon fas fa-chevron-circle-up"></i>
+</a>
 
+<a href="#" class="go-to-chat">
+    <i class="go-to-chat__icon fab fa-facebook-messenger"></i>
+</a>
+</div>
 
-<!-- JS here -->
-<script src="public/layout/js/vendor/jquery-3.5.0.min.js"></script>
-<script src="public/layout/js/popper.min.js"></script>
-<script src="public/layout/js/bootstrap.min.js"></script>
-<script src="public/layout/js/isotope.pkgd.min.js"></script>
-<script src="public/layout/js/imagesloaded.pkgd.min.js"></script>
-<script src="public/layout/js/jquery.magnific-popup.min.js"></script>
-<script src="public/layout/js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="public/layout/js/bootstrap-datepicker.min.js"></script>
-<script src="public/layout/js/jquery.nice-select.min.js"></script>
-<script src="public/layout/js/jquery.countdown.min.js"></script>
-<script src="public/layout/js/swiper-bundle.min.js"></script>
-<script src="public/layout/js/jarallax.min.js"></script>
-<script src="public/layout/js/slick.min.js"></script>
-<script src="public/layout/js/wow.min.js"></script>
-<script src="public/layout/js/nav-tool.js"></script>
-<script src="public/layout/js/plugins.js"></script>
-<script src="public/layout/js/main.js"></script>
+<script src="./public/assets/js/phone.js"></script>
+<script src="./public/assets/js/tool.js"></script>
+<script src="./public/assets/js/fix.js"></script>
+<script src="./public/assets/js/unlock.js"></script>
+<script>
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const event = (() => {
+
+    return {
+        handleEvent() {
+            // Search in mobile
+            const mobileSearchBtn = $('.header-mobile-search');
+
+            mobileSearchBtn.onclick = () => {
+                $('.header-mobile-search-box__wrap').classList.toggle('active');
+            };
+
+            // Menu nav in mobile 
+            const mobileMenuBtn = $('.header-mobile-menu');
+            const overlayMobileScreen = $('.header-mobile-nav__overlay');
+            const mobileNav = $('.header-mobile-nav');
+            const mobileCloseNavBtn = $('.header-mobile-nav__close');
+
+            function handleMobileNav() {
+                overlayMobileScreen.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            };
+
+            mobileMenuBtn.onclick = () => {
+                handleMobileNav();
+            };
+
+            overlayMobileScreen.onclick = () => {
+                handleMobileNav();
+            };
+
+            mobileCloseNavBtn.onclick = () => {
+                handleMobileNav()
+            };
+
+            // Menu subnav in mobile 
+            const mobileSubNavs = $$('.header-mobile-nav__item-select');
+
+            Array.from(mobileSubNavs).forEach((mobileSubNav) => {
+                mobileSubNav.onclick = () => {
+                    mobileSubNav.classList.toggle('active');
+                    mobileSubNav.firstElementChild.classList.toggle('active');
+                    if (mobileSubNav.nextElementSibling) {
+                        mobileSubNav.nextElementSibling.classList.toggle('active');
+                    };
+                };
+            });
+
+            // Scroll Screen 
+            const goToTopBtn = $('.go-to-top');
+            document.onscroll = () => {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                if (scrollTop > 120) {
+                    goToTopBtn.classList.add('active');
+                } else {
+                    goToTopBtn.classList.remove('active');
+                }
+            };
+        },
+        init() {
+            this.handleEvent();
+        }
+    }
+
+})();
+
+event.init();
+</script>
 </body>
 
-<!-- Mirrored from themepixer.com/demo/html/layout/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 May 2021 08:04:49 GMT -->
 </html>
