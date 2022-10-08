@@ -34,9 +34,15 @@
                                         <li class="header-nav__log-item">
                                             <a href="#" class="header-nav__log-link">Tra cứu bảo hành</a>
                                         </li>
+                                        <?php if(isset($_SESSION['user'])){?>
+                                        <li class="header-nav__log-item">
+                                            <a href="#" class="header-nav__log-link"><?=$_SESSION['user'];?></a>
+                                        </li>
+                                        <?php }else{ ?>
                                         <li class="header-nav__log-item">
                                             <a href="#" class="header-nav__log-link">Đăng nhập</a>
                                         </li>
+                                        <?php } ?>
                                         <li class="header-nav__log-item">
                                             <a href="#" class="header-nav__log-link">Đăng xuất</a>
                                         </li>
