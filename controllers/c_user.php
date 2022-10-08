@@ -16,7 +16,7 @@ class c_user {
             $username = addslashes($_POST['username']);
             $password = addslashes($_POST['password']);
             $check = $user->checkLogin($username, $password);
-            if($check->{'ma_nguoi_dung'}){
+            if($check->{'id'}){
                 $_SESSION['user'] = $username;
                 header("Location: index.php");
             }else{
@@ -41,10 +41,15 @@ class c_user {
             $email = addslashes($_POST['email']);
             $password = addslashes($_POST['password']);
             $checkUsername = $user->checkUsername($username);
-            if(!$checkUsername){
-                $_SESSION['error_register'] = 'Tên đăng nhập đã tồn tại';
+            if($checkUsername->{'id'}){
+                $_SESSION['error_register'] = 'Tên đăng nhập đã tồn tại, vui lòng thử lại !';
+                header('Location: register.php');
             }else{
-                $user->checkRegister($username,$password)
+                $register = $user->checkRegister($username,$name, $phone, $email, $password);
+                if($register == true){
+                    $_SESSION['register_success'] = 'Đăng ký thành công, vui lòng đăng nhập';
+                    header('Location: login.php');
+                }
             }
         }
     }

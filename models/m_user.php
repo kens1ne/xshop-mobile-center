@@ -9,15 +9,16 @@ class m_user extends database
     }
 
     public function checkRegister($username, $name, $phone, $email, $password){
-        $sql = "INSERT INTO `nguoi_dung`(`ho_ten`, `ten_dang_nhap`, `mat_khau`, `email`, `phone`, `active`) 
-        VALUES ('$name', '$username', '$password', '$email', '$phone', '1')";
-        $this->setQuery($sql);
-        return $this->execute(array($username,$name,$phone,$email,$password));
+            $sql = "INSERT INTO `nguoi_dung`(`ho_ten`, `ten_dang_nhap`, `mat_khau`, `email`, `phone`, `active`) 
+            VALUES ('$name', '$username', '$password', '$email', '$phone', '1')";
+            $this->setQuery($sql);
+            $this->execute(array($username,$name,$phone,$email,$password));
+            return true;
     }
 
     public function checkUsername($username){
-        $sql = "SELECT * FROM `nguoi_dung` WHERE `username`='$username'";
+        $sql = "SELECT * FROM `nguoi_dung` WHERE `ten_dang_nhap`='$username'";
         $this->setQuery($sql);
-        return $this->loadRow(array($password));
+        return $this->loadRow(array($username));
     }
 }
