@@ -1,34 +1,96 @@
-<script src="public/assets/libs/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap tether Core JavaScript -->
-<script src="public/assets/libs/popper.js/dist/umd/popper.min.js"></script>
-<script src="public/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="public/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-<script src="public/assets/extra-libs/sparkline/sparkline.js"></script>
-<!--Wave Effects -->
-<script src="public/dist/js/waves.js"></script>
-<!--Menu sidebar -->
-<script src="public/dist/js/sidebarmenu.js"></script>
-<!--Custom JavaScript -->
-<script src="public/dist/js/custom.min.js"></script>
-<!--This page JavaScript -->
-<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="public/assets/libs/flot/excanvas.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.pie.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.time.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.stack.js"></script>
-<script src="public/assets/libs/flot/jquery.flot.crosshair.js"></script>
-<script src="public/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-<script src="public/dist/js/pages/chart/chart-page-init.js"></script>
+<footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 3.2.0
+    </div>
+</footer>
 
-<!-- this page js -->
-<script src="public/assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
-<script src="public/assets/extra-libs/multicheck/jquery.multicheck.js"></script>
-<script src="public/assets/extra-libs/DataTables/datatables.min.js"></script>
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<script src="public/plugins/jquery/jquery.min.js"></script>
+
+<script src="public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="public/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="public/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="public/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="public/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="public/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="public/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="public/plugins/jszip/jszip.min.js"></script>
+<script src="public/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="public/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="public/plugins/summernote/summernote-bs4.min.js"></script>
+
+
+<script src="public/dist/js/adminlte.min.js?v=3.2.0"></script>
+
+
 <script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
+$(function() {
+    $('#summernote').summernote({
+        height: 300
+    });
+    $("#example1").DataTable({
+        "responsive": true,
+        "lengthChange": false,
+        "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+    });
+    $('#products').DataTable({
+        "paging": true,
+        "lengthChange": true,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+    });
+    $('#example4').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+    });
+
+    //-------------
+    //- PIE CHART -
+    //-------------
+    // Get context with jQuery - using jQuery's .get() method.
+    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+    var pieData = donutData;
+    var pieOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+    }
+    //Create pie or douhnut chart
+    // You can switch between pie and douhnut using the method below.
+    new Chart(pieChartCanvas, {
+        type: 'pie',
+        data: pieData,
+        options: pieOptions
+    })
+});
 </script>
+</body>
+
+</html>
