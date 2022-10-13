@@ -17,7 +17,7 @@ class c_user {
             $password = addslashes($_POST['password']);
             $check = $user->checkLogin($username, $password);
             if($check->{'id'}){
-                $_SESSION['user'] = $username;
+                $_SESSION['id'] = $username;
                 header("Location: index.php");
             }else{
                 $_SESSION['error_login'] = 'Tài khoản và mật khẩu không chính xác';
