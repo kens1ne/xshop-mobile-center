@@ -46,7 +46,7 @@
                                     <td><?=$value->{'email'};?></td>
                                     <td><?=$value->{'phone'};?></td>
                                     <td><button
-                                            class="btn btn-danger btn-xs"><?= ($value->{'admin'} == 0) ? "Thành viên": "Quản trị viên" ?></button>
+                                            class="btn btn-<?= ($value->{'admin'} == 0) ? "primary": "danger" ?> btn-xs"><?= ($value->{'admin'} == 0) ? "Thành viên": "Quản trị viên" ?></button>
                                     </td>
                                     <td>
                                         <button class="btn btn-primary">Sửa</button>
