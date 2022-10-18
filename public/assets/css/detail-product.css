@@ -1,0 +1,87 @@
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex-pro {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.locate {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.select {
+    border: none;
+    color: #C69A72;
+    font-size: 15px;
+}
+
+.detail {
+    width: 980px;
+    margin: 0 auto;
+
+}
+
+.img-pro {
+    width: 30%;
+}
+
+.default {
+    font-size: 15px;
+    padding-top: 12px;
+}
+
+.pro-price {
+    padding-top: 15px;
+    font-size: 25px;
+    color: red;
+}
+
+.status {
+    font-size: 15px;
+    color: gray;
+}
+
+.btn {
+    padding-top: 40px;
+}
+
+.add-pro {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #5D83DB;
+    cursor: pointer;
+}
+
+.buy-pro {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F98C46;
+    background: -webkit-linear-gradient(top, #fa9d4d 0%, #f87f41 100%);
+    background: linear-gradient(to bottom, #fa9d4d 0%, #f87f41 100%);
+    padding: 10px;
+}
+
+.btn_cmt {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F98C46;
+    background: -webkit-linear-gradient(top, #fa9d4d 0%, #f87f41 100%);
+    background: linear-gradient(to bottom, #fa9d4d 0%, #f87f41 100%);
+    padding: 10px;
+}

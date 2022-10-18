@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./public/assets/css/login.css?v=<?=time();?>">
+    <link rel="stylesheet" href="./public/assets/css/detail-product.css?v=<?=time();?>">
     <link rel="stylesheet" href="./public/assets/css/base.css">
     <link rel="stylesheet" href="./public/assets/css/grid.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">

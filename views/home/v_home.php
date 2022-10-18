@@ -327,67 +327,13 @@
                         <div class="col l-12 m-12 c-12">
                             <div class="container-nav">
                                 <h2 class="container-nav__heading">Hãng:</h2>
+
                                 <ul class="container-nav__list">
+                                    <?php foreach( $get_category as $data){?>
                                     <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Apple</a>
+                                        <a href="#" class="container-nav__item-link"><?=$data->{'ten_loai'}?></a>
                                     </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Samsung</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">OnePlus</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Xiaomi</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Oppo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Vivo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">ZTE</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Asus</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Nokia</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">LG</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Google</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Vsmart</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Meizu</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Sony</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">BlackBerry</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Lenovo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Bkav</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Huawei</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Smartisan</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Meiigo</a>
-                                    </li>
+                                    <?php }?>
                                 </ul>
                             </div>
                         </div>
@@ -427,11 +373,176 @@
                                 </div>
                             </div>
                         </div>
-
+                        <h2 style="color: red;font-size:24px;">HÀNG ĐẶC BIỆT</h2>
                         <div class="col l-12 m-12 c-12">
                             <div class="container-product">
-                                <div class="row no-gutters phone-products">
+                                <div class="row no-gutters ">
                                     <!-- Thêm từng điện thoại vào -->
+                                    <?php foreach ($get_products as $data){?>
+
+
+                                    <div class="col l-2-4 l-3-m m-4 c-6">
+                                        <div class="container-product__item">
+                                            <div class="container-product__item-heading">
+                                                <div class="container-product__item-img"
+                                                    style="background-image: url(<?=$data->{'hinh'}?>)">
+                                                </div>
+                                                ; <div class="container-product-guarantee">
+                                                    <a href="detail.php?id=<?=$data->{'id'}?>"
+                                                        class="container-product__item-link">
+                                                        <div class="container-product-guarantee__heading">
+                                                            <img src="https://mobilecity.vn/public/assets/img/icon-mobilecity-care.png"
+                                                                alt="Guarantee"
+                                                                class="container-product-guarantee__heading-img">
+                                                            <h3 class="container-product-guarantee__heading-text">
+                                                                MobileCity Care</h3>
+                                                        </div>
+
+                                                        <ul class="container-product-guarantee__list">
+                                                            <li class="container-product-guarantee__item">BH 12 thÃ¡ng
+                                                                nguá»“n, mÃ n hÃ¬nh</li>
+                                                            <li class="container-product-guarantee__item">Äá»•i má»›i
+                                                                30 ngÃ y Ä‘áº§u tiÃªn</li>
+                                                            <li class="container-product-guarantee__item">Táº·ng á»‘p
+                                                                lÆ°ng, dÃ¡n cÆ°á»ng lá»±c</li>
+                                                            <li class="container-product-guarantee__item">Há»— trá»£
+                                                                pháº§n má»m trá»n Ä‘á»i mÃ¡y</li>
+                                                        </ul>
+                                                    </a>
+                                                    <a href=${product.linkGuarantee}
+                                                        class="container-product-guarantee__btn">Báº£o hÃ nh vÃ ng</a>
+                                                </div>
+                                            </div>
+                                            <div class="container-product__item-wrap">
+                                                <div class="container-product__item-info">
+                                                    <a href="#" class="container-product__item-name">
+                                                        <?=$data->{'ten_hh'}?>
+                                                    </a>
+                                                    <i class=" container-product__item-sale-icon fas fa-gift"></i>
+                                                </div>
+                                                <div class="container-product__item-buy">
+                                                    <span class="container-product__item-price">
+                                                        <?=number_format($data->{'don_gia'})?>
+                                                    </span>
+                                                    <a href=${product.linkProduct}
+                                                        class="container-product__item-btn">MUA</a>
+                                                </div>
+                                            </div>
+                                            <ul class="container-product__item-gifts-list">
+                                                <li class="container-product__item-gift">
+                                                    1. Táº·ng:
+                                                    <span class="container-product__item-gift--highlight">
+                                                        CÆ°á»ng lá»±c - á»p lÆ°ng - Tai nghe
+                                                    </span>
+                                                    khi mua BHV
+                                                </li>
+                                                <li class="container-product__item-gift">
+                                                    2. Giáº£m:
+                                                    <span class="container-product__item-gift--highlight">
+                                                        100K
+                                                    </span>
+                                                    Ã¡p dá»¥ng HSSV mua BHV táº¡i
+                                                    <span class="container-product__item-gift--highlight">
+                                                        42 phá»‘ Vá»ng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <ul class="container-product-marker__list ${markers}">
+                                                <li
+                                                    class="container-product-marker__item container-product-marker__item--new">
+                                                    Má»›i</li>
+                                                <li
+                                                    class="container-product-marker__item container-product-marker__item--hot">
+                                                    Hot</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <?php }?>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>PHỔ BIẾN</h2>
+                        <div class="col l-12 m-12 c-12">
+                            <div class="container-product">
+                                <div class="row no-gutters ">
+                                    <!-- Thêm từng điện thoại vào -->
+                                    <?php foreach( $get_product as $data){?>
+                                    <div class="col l-2-4 l-3-m m-4 c-6">
+                                        <div class="container-product__item">
+                                            <div class="container-product__item-heading">
+                                                <div class="container-product__item-img"
+                                                    style="background-image: url(<?=$data->{'hinh'}?>)"></div>
+                                                ; <div class="container-product-guarantee">
+                                                    <a href="detail.php?id=<?=$data->{'id'}?>"
+                                                        class="container-product__item-link">
+                                                        <div class="container-product-guarantee__heading">
+                                                            <img src="https://mobilecity.vn/public/assets/img/icon-mobilecity-care.png"
+                                                                alt="Guarantee"
+                                                                class="container-product-guarantee__heading-img">
+                                                            <h3 class="container-product-guarantee__heading-text">
+                                                                MobileCity Care</h3>
+                                                        </div>
+
+                                                        <ul class="container-product-guarantee__list">
+                                                            <li class="container-product-guarantee__item">BH 12 thÃ¡ng
+                                                                nguá»“n, mÃ n hÃ¬nh</li>
+                                                            <li class="container-product-guarantee__item">Äá»•i má»›i
+                                                                30 ngÃ y Ä‘áº§u tiÃªn</li>
+                                                            <li class="container-product-guarantee__item">Táº·ng á»‘p
+                                                                lÆ°ng, dÃ¡n cÆ°á»ng lá»±c</li>
+                                                            <li class="container-product-guarantee__item">Há»— trá»£
+                                                                pháº§n má»m trá»n Ä‘á»i mÃ¡y</li>
+                                                        </ul>
+                                                    </a>
+                                                    <a href=${product.linkGuarantee}
+                                                        class="container-product-guarantee__btn">Báº£o hÃ nh vÃ ng</a>
+                                                </div>
+                                            </div>
+                                            <div class="container-product__item-wrap">
+                                                <div class="container-product__item-info">
+                                                    <a href="#" class="container-product__item-name">
+                                                        <?=$data->{'ten_hh'}?>
+                                                    </a>
+                                                    <i class=" container-product__item-sale-icon fas fa-gift"></i>
+                                                </div>
+                                                <div class="container-product__item-buy">
+                                                    <span class="container-product__item-price">
+                                                        <?=number_format($data->{'don_gia'})?>
+                                                    </span>
+                                                    <a href=${product.linkProduct}
+                                                        class="container-product__item-btn">MUA</a>
+                                                </div>
+                                            </div>
+                                            <ul class="container-product__item-gifts-list">
+                                                <li class="container-product__item-gift">
+                                                    1. Táº·ng:
+                                                    <span class="container-product__item-gift--highlight">
+                                                        CÆ°á»ng lá»±c - á»p lÆ°ng - Tai nghe
+                                                    </span>
+                                                    khi mua BHV
+                                                </li>
+                                                <li class="container-product__item-gift">
+                                                    2. Giáº£m:
+                                                    <span class="container-product__item-gift--highlight">
+                                                        100K
+                                                    </span>
+                                                    Ã¡p dá»¥ng HSSV mua BHV táº¡i
+                                                    <span class="container-product__item-gift--highlight">
+                                                        42 phá»‘ Vá»ng
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <ul class="container-product-marker__list ${markers}">
+                                                <li
+                                                    class="container-product-marker__item container-product-marker__item--new">
+                                                    Má»›i</li>
+                                                <li
+                                                    class="container-product-marker__item container-product-marker__item--hot">
+                                                    Hot</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <?php }?>
                                 </div>
                             </div>
                         </div>
@@ -471,21 +582,7 @@
                                     <li class="container-nav__item">
                                         <a href="#" class="container-nav__item-link">Loa - Tai nghe</a>
                                     </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Đồng hồ thông minh</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Pin, Sạc dự phòng</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Đồ chơi công nghệ</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Phụ kiện điện thoại</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Máy lọc không khí</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -685,66 +782,12 @@
                             <div class="container-nav">
                                 <h2 class="container-nav__heading">Hãng:</h2>
                                 <ul class="container-nav__list">
+                                    <?php foreach( $get_category as $data){?>
                                     <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Apple</a>
+                                        <a href="#" class="container-nav__item-link"><?=$data->{'ten_loai'}?></a>
                                     </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Samsung</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">OnePlus</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Xiaomi</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Oppo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Vivo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">ZTE</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Asus</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Nokia</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">LG</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Google</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Vsmart</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Meizu</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Sony</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">BlackBerry</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Lenovo</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Bkav</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Huawei</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Smartisan</a>
-                                    </li>
-                                    <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link">Meiigo</a>
-                                    </li>
+                                    <?php }?>
+
                                 </ul>
                             </div>
                         </div>
