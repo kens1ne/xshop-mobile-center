@@ -44,7 +44,7 @@ $(function() {
         "autoWidth": false,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
+    $('#categories_table').DataTable({
         "paging": true,
         "lengthChange": false,
         "searching": false,
@@ -62,7 +62,7 @@ $(function() {
         "autoWidth": false,
         "responsive": true,
     });
-    $('#example4').DataTable({
+    $('#customers_table').DataTable({
         "paging": true,
         "lengthChange": false,
         "searching": false,

@@ -49,12 +49,20 @@
                                 <input type="file" name="image" class="form-control" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Loại Hàng
+                                <label>Danh mục
                                 </label>
                                 <select class="custom-select form-control-border" name="category">
                                     <?php foreach ($categories as $value) { ?>
                                     <option value="<?=$value->{'id'};?>"><?=$value->{'ten_loai'};?></option>
                                     <?php }?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Loại Hàng
+                                </label>
+                                <select class="custom-select form-control-border" name="special">
+                                    <option value="0">Hàng thường</option>
+                                    <option value="1">Hàng đặc biệt</option>
                                 </select>
                             </div>
                             <div class="form-group">

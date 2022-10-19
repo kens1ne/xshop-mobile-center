@@ -12,4 +12,22 @@ class m_category extends database {
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function get_info_category($id) {
+        $sql = "SELECT * FROM `loai` WHERE `id` = '$id'";
+        $this->setQuery($sql);
+        return $this->loadRow();
+    }
+
+    public function change_info_category($id, $name) {
+        $sql = "UPDATE `loai` SET `ten_loai`='$name' WHERE `id` = '$id'";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
+
+    public function delete_category($id){
+        $sql = "DELETE FROM `loai` WHERE `id` = '$id'";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
 }

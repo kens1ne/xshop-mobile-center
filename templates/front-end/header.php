@@ -38,14 +38,18 @@
                                         <li class="header-nav__log-item">
                                             <a href="#" class="header-nav__log-link"><?=$_SESSION['id'];?></a>
                                         </li>
+                                        <li class="header-nav__log-item">
+                                            <a href="logout.php" class="header-nav__log-link">Đăng xuất</a>
+                                        </li>
                                         <?php }else{ ?>
                                         <li class="header-nav__log-item">
-                                            <a href="#" class="header-nav__log-link">Đăng nhập</a>
+                                            <a href="login.php" class="header-nav__log-link">Đăng nhập</a>
+                                        </li>
+                                        <li class="header-nav__log-item">
+                                            <a href="register.php" class="header-nav__log-link">Đăng ký</a>
                                         </li>
                                         <?php } ?>
-                                        <li class="header-nav__log-item">
-                                            <a href="#" class="header-nav__log-link">Đăng xuất</a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -61,7 +65,7 @@
                                 <i class="header-mobile-menu__icon fas fa-bars"></i>
                             </div>
 
-                            <a href="#" class="header-logo__link">
+                            <a href="index.php" class="header-logo__link">
                                 <div class="header-logo__img"></div>
                             </a>
 

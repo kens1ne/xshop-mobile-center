@@ -23,7 +23,7 @@
 .detail {
     width: 980px;
     margin: 0 auto;
-
+    padding: 6px;
 }
 
 .img-pro {
@@ -65,23 +65,40 @@
     font-size: 15px;
     padding: 10px;
     color: white;
-    border: 1px solid gray;
+    border: none;
     border-radius: 5px;
     background-color: #F98C46;
     background: -webkit-linear-gradient(top, #fa9d4d 0%, #f87f41 100%);
     background: linear-gradient(to bottom, #fa9d4d 0%, #f87f41 100%);
     padding: 10px;
 }
-
+textarea{
+    font-size: 18px;
+    border-radius: 5px;
+    width:100%;
+}
+.comment{
+    margin-top: 32px;
+    padding: 4px;
+}
 .btn_cmt {
     cursor: pointer;
     font-size: 15px;
     padding: 10px;
     color: white;
-    border: 1px solid gray;
+    border: none;
     border-radius: 5px;
     background-color: #F98C46;
     background: -webkit-linear-gradient(top, #fa9d4d 0%, #f87f41 100%);
     background: linear-gradient(to bottom, #fa9d4d 0%, #f87f41 100%);
     padding: 10px;
+}
+.list-comment {
+    margin-top: 20px;
+}
+.user-comment{
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 5px 0 5px 0;
+    padding: 8px;
 }

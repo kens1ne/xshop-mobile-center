@@ -15,4 +15,22 @@ class m_user extends database {
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function get_info_user($id){
+        $sql = "SELECT * FROM `users` WHERE `id` = '$id'";
+        $this->setQuery($sql);
+        return $this->loadRow();
+    }
+
+    public function change_info_user($id, $name, $email, $phone, $rule){
+        $sql = "UPDATE `users` SET `name`='$name', `email`='$email', `phone`='$phone', `admin`='$rule' WHERE `id`='$id'";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
+
+    public function delete_user($id){
+        $sql = "DELETE FROM `users` WHERE `id` = '$id'";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
 }
