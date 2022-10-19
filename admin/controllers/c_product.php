@@ -1,7 +1,7 @@
 <?php
-include ("models/m_product.php");
 class c_product {
     public function add() {
+        include ("models/m_product.php");
         $m_product = new m_product();
         $code = addslashes($_POST['code']);
         $name = addslashes($_POST['name']);
@@ -21,6 +21,7 @@ class c_product {
     }
     
     public function edit(){
+        include ("models/m_product.php");
         include ("models/m_category.php");
         $id = addslashes($_GET['id']);
         $category = new m_category();
@@ -32,6 +33,7 @@ class c_product {
     }
 
     public function update(){
+        include ("models/m_product.php");
         $m_product = new m_product();
         $id = addslashes($_POST['id']);
         $code = addslashes($_POST['code']);
@@ -55,6 +57,15 @@ class c_product {
 
     public function delete(){
         
+    }
+
+    public function comments(){
+        $id = $_GET['id'];
+        include ("models/m_product.php");
+        $m_product = new m_product();
+        $comments = $m_product->get_products_comment($id);
+        $view = "views/information/commentInfo.php";
+        include ("templates/layout.php");
     }
 }
 // làm tính năng đăng nhập nhảy vào trang home.php

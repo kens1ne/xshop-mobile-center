@@ -18,6 +18,7 @@ class c_home {
     }
 
     public function products() {
+        include ("models/m_product.php");
         include ("models/m_category.php");
         $category = new m_category();
         $categories = $category->category_list();
@@ -32,6 +33,14 @@ class c_home {
         $m_user = new m_user();
         $users = $m_user->user_list();
         $view = "views/home/v_customers.php";
+        include ("templates/layout.php");
+    }
+
+    public function comments() {
+        include("models/m_product.php");
+        $m_product = new m_product();
+        $list = $m_product->load_comments();
+        $view = "views/home/v_comments.php";
         include ("templates/layout.php");
     }
 }

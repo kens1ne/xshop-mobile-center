@@ -45,4 +45,16 @@ class m_product extends database {
         $this->setQuery($sql);
         return $this->loadAllRows();
     }
+
+    public function load_comments() {
+        $sql = "SELECT hang_hoa.*,binh_luan.id_hh, COUNT(*) FROM hang_hoa INNER JOIN binh_luan ON hang_hoa.id = binh_luan.id_hh GROUP by binh_luan.id_hh ORDER BY binh_luan.id_hh";
+        $this->setQuery($sql);
+        return $this->loadAllRows();
+    }
+
+    public function get_products_comment($id){
+        $sql = "SELECT binh_luan.*, users.name FROM binh_luan INNER JOIN users ON binh_luan.id_kh = users.id WHERE binh_luan.id_hh  =$id ORDER BY id DESC";
+        $this-> setQuery($sql);
+        return $this -> loadAllRows();
+    }
 }

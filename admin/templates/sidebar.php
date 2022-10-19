@@ -67,7 +67,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/gallery.html" class="nav-link">
+                    <a href="Comments.php" class="nav-link">
                         <i class="nav-icon fa-solid fa-comment"></i>
                         <p>
                             Bình Luận
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/gallery.html" class="nav-link">
+                    <a href="Analytics.php" class="nav-link">
                         <i class="nav-icon fa-solid fa-chart-pie"></i>
                         <p>
                             Thống Kê
