@@ -18,6 +18,7 @@ class c_home {
         include ('models/m_product.php');
         $product= new m_product();
         $id = $_GET['id'];
+        $product->update_View($id);
         $get_products = $product -> get_products_info($id);
         $get_comments = $product -> get_products_comment($id);
         $view = "views/home/v_detail.php";

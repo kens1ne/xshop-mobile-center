@@ -35,6 +35,10 @@ class m_product extends database
         return $this -> loadAllRows();
     }
 
+    public function update_view($id){
+        $sql = "UPDATE `hang_hoa` SET`so_luot_xem`=`so_luot_xem` + 1 WHERE `id` = '$id'";
+        $this-> setQuery($sql);
+        return $this->execute();
+    }
 
-    
 }
