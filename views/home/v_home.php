@@ -399,18 +399,14 @@
                                                         </div>
 
                                                         <ul class="container-product-guarantee__list">
-                                                            <li class="container-product-guarantee__item">BH 12 thÃ¡ng
-                                                                nguá»“n, mÃ n hÃ¬nh</li>
-                                                            <li class="container-product-guarantee__item">Äá»•i má»›i
-                                                                30 ngÃ y Ä‘áº§u tiÃªn</li>
-                                                            <li class="container-product-guarantee__item">Táº·ng á»‘p
-                                                                lÆ°ng, dÃ¡n cÆ°á»ng lá»±c</li>
-                                                            <li class="container-product-guarantee__item">Há»— trá»£
-                                                                pháº§n má»m trá»n Ä‘á»i mÃ¡y</li>
+                                                            <li class="container-product-guarantee__item">BH 12 tháng nguồn, màn hình</li>
+                                                            <li class="container-product-guarantee__item">Đổi mới 30 ngày đầu tiên</li>
+                                                            <li class="container-product-guarantee__item">Tặng ốp lưng, dán cường lực</li>
+                                                            <li class="container-product-guarantee__item">Hỗ trợ phần mềm trọn đời máy</li>
                                                         </ul>
                                                     </a>
                                                     <a href=${product.linkGuarantee}
-                                                        class="container-product-guarantee__btn">Báº£o hÃ nh vÃ ng</a>
+                                                        class="container-product-guarantee__btn">Bảo hành vàng</a>
                                                 </div>
                                             </div>
                                             <div class="container-product__item-wrap">
@@ -430,20 +426,20 @@
                                             </div>
                                             <ul class="container-product__item-gifts-list">
                                                 <li class="container-product__item-gift">
-                                                    1. Táº·ng:
+                                                1. Tặng: 
                                                     <span class="container-product__item-gift--highlight">
-                                                        CÆ°á»ng lá»±c - á»p lÆ°ng - Tai nghe
+                                                    Cường lực - Ốp lưng - Tai nghe
                                                     </span>
                                                     khi mua BHV
                                                 </li>
                                                 <li class="container-product__item-gift">
-                                                    2. Giáº£m:
+                                                2. Giảm: 
                                                     <span class="container-product__item-gift--highlight">
                                                         100K
                                                     </span>
-                                                    Ã¡p dá»¥ng HSSV mua BHV táº¡i
+                                                    áp dụng HSSV mua BHV tại    
                                                     <span class="container-product__item-gift--highlight">
-                                                        42 phá»‘ Vá»ng
+                                                    42 phố Vọng
                                                     </span>
                                                 </li>
                                             </ul>
@@ -484,18 +480,14 @@
                                                         </div>
 
                                                         <ul class="container-product-guarantee__list">
-                                                            <li class="container-product-guarantee__item">BH 12 thÃ¡ng
-                                                                nguá»“n, mÃ n hÃ¬nh</li>
-                                                            <li class="container-product-guarantee__item">Äá»•i má»›i
-                                                                30 ngÃ y Ä‘áº§u tiÃªn</li>
-                                                            <li class="container-product-guarantee__item">Táº·ng á»‘p
-                                                                lÆ°ng, dÃ¡n cÆ°á»ng lá»±c</li>
-                                                            <li class="container-product-guarantee__item">Há»— trá»£
-                                                                pháº§n má»m trá»n Ä‘á»i mÃ¡y</li>
+                                                            <li class="container-product-guarantee__item">BH 12 tháng nguồn, màn hình</li>
+                                                            <li class="container-product-guarantee__item">Đổi mới 30 ngày đầu tiên</li>
+                                                            <li class="container-product-guarantee__item">Tặng ốp lưng, dán cường lực</li>
+                                                            <li class="container-product-guarantee__item">Hỗ trợ phần mềm trọn đời máy</li>
                                                         </ul>
                                                     </a>
                                                     <a href=${product.linkGuarantee}
-                                                        class="container-product-guarantee__btn">Báº£o hÃ nh vÃ ng</a>
+                                                        class="container-product-guarantee__btn">Bảo hành vàng</a>
                                                 </div>
                                             </div>
                                             <div class="container-product__item-wrap">
@@ -515,27 +507,27 @@
                                             </div>
                                             <ul class="container-product__item-gifts-list">
                                                 <li class="container-product__item-gift">
-                                                    1. Táº·ng:
+                                                1. Tặng: 
                                                     <span class="container-product__item-gift--highlight">
-                                                        CÆ°á»ng lá»±c - á»p lÆ°ng - Tai nghe
+                                                    Cường lực - Ốp lưng - Tai nghe
                                                     </span>
                                                     khi mua BHV
                                                 </li>
                                                 <li class="container-product__item-gift">
-                                                    2. Giáº£m:
+                                                2. Giảm: 
                                                     <span class="container-product__item-gift--highlight">
                                                         100K
                                                     </span>
-                                                    Ã¡p dá»¥ng HSSV mua BHV táº¡i
+                                                    áp dụng HSSV mua BHV tại 
                                                     <span class="container-product__item-gift--highlight">
-                                                        42 phá»‘ Vá»ng
+                                                    42 phố Vọng
                                                     </span>
                                                 </li>
                                             </ul>
                                             <ul class="container-product-marker__list ${markers}">
                                                 <li
                                                     class="container-product-marker__item container-product-marker__item--new">
-                                                    Má»›i</li>
+                                                    Mới</li>
                                                 <li
                                                     class="container-product-marker__item container-product-marker__item--hot">
                                                     Hot</li>

@@ -3,8 +3,8 @@
         <h2 style="font-size:25px"><?= $get_products -> {'ten_hh'}?>
         </h2>
         <div class="flex">
-            <div class="img-pro">
-                <img src="https://cdn.mobilecity.vn/mobilecity-vn/images/2022/02/w300/nubia-red-magic-7-den.jpg" alt="">
+            <div class="img-pro" >
+                <img src=" <?= urldecode($get_products -> {'hinh'})?>" alt="">
             </div>
             <div class="detail-pro">
                 <section class="flex-pro">
@@ -44,7 +44,7 @@
                 <p><label style="font-size:25px;">Bình Luận </label></p>
                 <textarea name="comment" rows="5"></textarea>
                 <br>
-                <input class="btn_cmt" type="submit" value="Gửi Bình Luận ">
+                <button class="btn_cmt" type="submit" >Gửi Bình Luận </button>
             </form>
             <div class="list-comment">
                 <?php foreach ($get_comments as $data){?>
