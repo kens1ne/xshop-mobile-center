@@ -93,6 +93,7 @@
                                     <th>Giảm Giá</th>
                                     <th>Ngày Nhập</th>
                                     <th>Lượt Xem</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -104,6 +105,13 @@
                                     <td><?=$value->{'giam_gia'};?></td>
                                     <td><?=$value->{'ngay_nhap'};?></td>
                                     <td><?=$value->{'so_luot_xem'};?></td>
+                                    <td>
+                                        <button class="btn btn-primary"
+                                            onclick="editCategory('getInfo','<?=$value->{'id'};?>')" data-toggle="modal"
+                                            data-target="#edit_category">Sửa</button>
+                                        <button class="btn btn-danger"
+                                            onclick="deleteCategory('delete','<?=$value->{'id'};?>')">Xóa</button>
+                                    </td>
                                 </tr>
                                 <?php } ?>
                             </tbody>

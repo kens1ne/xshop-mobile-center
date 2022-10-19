@@ -1,5 +1,4 @@
 <?php
-include ("models/m_product.php");
 class c_product {
     public function add() {
         $m_product = new m_product();
@@ -19,7 +18,7 @@ class c_product {
     }
     
     public function edit(){
-
+        
     }
 
     public function delete(){
