@@ -54,6 +54,9 @@ $(function() {
         "responsive": true,
     });
     $('#products').DataTable({
+        "order": [
+            [0, 'desc']
+        ],
         "paging": true,
         "lengthChange": true,
         "searching": false,
