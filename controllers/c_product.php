@@ -5,12 +5,33 @@ class c_product {
     }
 
     public function index() {
-        include ("models/m_product.php");
+        
+    }
+    public function cart(){
+        $id = $_GET['id'];
+        include("models/m_product.php");
         $m_product = new m_product();
-        $products = $m_product->read_product();
+        $data = $m_product->get_products_info($id);
+        $view = "views/product/v_cart.php";
+        include ("templates/front-end/layout.php");
 
-        // gọi phương thức read_product vào đây ;
-        $view = "views/listproduct/v_listproduct.php";
+    }
+
+    public function actionBuy(){
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+        include("models/m_product.php");
+        $m_product = new m_product();
+        $actionBuy = $m_product->purchase($id, $_SESSION['id']->{'id'}, $name, $phone, $address);
+        if($actionBuy){
+            header("location: order_success.php");
+        }
+    }
+
+    public function cartSuccess(){
+        $view = "views/product/v_success.php";
         include ("templates/front-end/layout.php");
     }
 }

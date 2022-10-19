@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./public/assets/css/login.css?v=<?=time();?>">
     <link rel="stylesheet" href="./public/assets/css/detail-product.css?v=<?=time();?>">
+    <link rel="stylesheet" href="./public/assets/css/cart.css?v=<?=time();?>">
     <link rel="stylesheet" href="./public/assets/css/base.css">
     <link rel="stylesheet" href="./public/assets/css/grid.css">
     <link rel="stylesheet" href="./public/assets/css/main.css">

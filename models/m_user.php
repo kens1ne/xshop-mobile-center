@@ -23,7 +23,7 @@ class m_user extends database
     }
 
     public function insertCmt($comment,$id_hh,$id_kh){
-        $sql = "INSERT INTO `binh_luan`(`noi_dung`, `id_hh`, `id_kh`) VALUES (`$comment`, `$id_hh`, `$id_kh`)";
+        $sql = "INSERT INTO `binh_luan`(`noi_dung`, `id_hh`, `id_kh`) VALUES ('$comment', '$id_hh', '$id_kh')";
         $this->setQuery($sql);
         return $this->execute();
     }

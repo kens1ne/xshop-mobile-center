@@ -31,7 +31,7 @@
                         <?= urldecode($get_products -> {'mo_ta'})?>
                     </p>
                     <div class="btn">
-                        <button class="buy-pro">Mua Ngay </button>
+                        <a href="cart.php?id=<?=$get_products->{'id'}?>" class="buy-pro">Mua Ngay </a>
                     </div>
                     
                 </section>
@@ -40,7 +40,7 @@
 
         </div>
         <div class="comment">
-            <form action="action_cmt.php" method="POST">
+            <form action="action-cmt.php" method="POST">
                 <p><label style="font-size:25px;">Bình Luận </label></p>
                 <textarea name="comment" rows="5"></textarea>
                 <input type="hidden" name="id" value="<?= $get_products -> {'id'}?>">

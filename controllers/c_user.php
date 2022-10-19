@@ -17,7 +17,7 @@ class c_user {
             $password = addslashes($_POST['password']);
             $check = $user->checkLogin($username, $password);
             if($check->{'id'}){
-                $_SESSION['id'] = $username;
+                $_SESSION['id'] = $check;
                 header("Location: index.php");
             }else{
                 $_SESSION['error_login'] = 'Tài khoản và mật khẩu không chính xác';
@@ -55,8 +55,14 @@ class c_user {
     }
     public function actionCmt(){
         include ("models/m_user.php");
+        $m_user = new m_user();
+        $id_hh = $_POST['id'];
+        $id_cmt = $_SESSION['id']->{'id'};
         $comment = $_POST['comment'];
-        
+        $actionComment = $m_user->insertCmt($comment, $id_hh, $id_cmt);
+        if($actionComment){
+            header("location: detail.php?id=".$id_hh);
+        }
     }
     public function logout() {
         session_destroy();
