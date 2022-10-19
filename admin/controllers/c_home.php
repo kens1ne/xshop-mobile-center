@@ -19,7 +19,6 @@ class c_home {
 
     public function products() {
         include ("models/m_category.php");
-        include ("models/m_product.php");
         $category = new m_category();
         $categories = $category->category_list();
         $m_product = new m_product();

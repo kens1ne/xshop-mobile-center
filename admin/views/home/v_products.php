@@ -87,6 +87,7 @@
                         <table id="products" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Mã Hàng Hóa </th>
                                     <th>Tên Hàng Hóa</th>
                                     <th>Đơn Giá</th>
@@ -99,6 +100,7 @@
                             <tbody>
                                 <?php foreach($products as $value) { ?>
                                 <tr>
+                                    <td><?=$value->{'id'};?></td>
                                     <td><?=$value->{'code'};?></td>
                                     <td><?=$value->{'ten_hh'};?></td>
                                     <td><?=$value->{'don_gia'};?></td>

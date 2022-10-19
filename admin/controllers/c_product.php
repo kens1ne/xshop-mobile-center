@@ -1,4 +1,5 @@
 <?php
+include ("models/m_product.php");
 class c_product {
     public function add() {
         $m_product = new m_product();
@@ -9,8 +10,9 @@ class c_product {
         $image = $_FILES['image'];
         $loai = addslashes($_POST['category']);
         $mota = addslashes($_POST['description']);
+        $dacbiet = addslashes($_POST['special']);
         if(isset($_POST['addProduct'])){
-            $addProduct = $m_product->add($code, $name, $price, $discount, $image, $loai, $mota);
+            $addProduct = $m_product->add($code, $name, $price, $discount, $image, $loai, $mota, $dacbiet);
             if($addProduct){
                 header("location: Products.php");
             }
