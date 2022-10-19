@@ -53,7 +53,11 @@ class c_user {
             }
         }
     }
-    
+    public function actionCmt(){
+        include ("models/m_user.php");
+        $comment = $_POST['comment'];
+        
+    }
     public function logout() {
         session_destroy();
         header("Location: index.php");

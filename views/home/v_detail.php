@@ -33,7 +33,7 @@
                     <div class="btn">
                         <button class="buy-pro">Mua Ngay </button>
                     </div>
-                    <form action="">
+                    
                 </section>
             </div>
 
@@ -43,6 +43,7 @@
             <form action="action_cmt.php" method="POST">
                 <p><label style="font-size:25px;">Bình Luận </label></p>
                 <textarea name="comment" rows="5"></textarea>
+                <input type="hidden" name="id" value="<?= $get_products -> {'id'}?>">
                 <br>
                 <button class="btn_cmt" type="submit" >Gửi Bình Luận </button>
             </form>
