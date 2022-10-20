@@ -139,9 +139,9 @@
 }
 
 .header-logo__img {
-    width: 220px;
+    width: 165px;
     height: 39px;
-    background-image: url(https://mobilecity.vn/public/assets/img/all_icon.png);
+    background-image: url(../banner/all_icon.png);
     background-position: 0 -42px;
     margin: 14px 16px 32px 0;
 }

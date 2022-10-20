@@ -4,4 +4,6 @@
     include ('controllers/c_user.php');
     $comment = new c_user();
     $comment->actionCmt();
+ }else{
+   header("location: login.php");
  }
