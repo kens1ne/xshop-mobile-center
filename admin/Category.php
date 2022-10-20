@@ -6,6 +6,6 @@ include ("controllers/c_home.php");
 $home = new c_home();
 $home->category();
 } else {
-    header("location:login.php");
+    header("location: login.php");
 }
 ?>
