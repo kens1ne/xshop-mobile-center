@@ -43,6 +43,14 @@ class c_home {
         $view = "views/home/v_comments.php";
         include ("templates/layout.php");
     }
+
+    public function analytics() {
+        include("models/m_product.php");
+        $m_product = new m_product();
+        $list = $m_product->analytics();
+        $view = "views/home/v_analytics.php";
+        include ("templates/layout.php");
+    }
 }
 // làm tính năng đăng nhập nhảy vào trang home.php
 // nếu như không đăng nhập mà vào link của home.php sẽ bị bật về trang login

@@ -57,4 +57,11 @@ class m_product extends database {
         $this-> setQuery($sql);
         return $this -> loadAllRows();
     }
+
+    public function analytics(){
+        $sql = "SELECT hang_hoa.*, loai.*, MIN(hang_hoa.don_gia), MAX(hang_hoa.don_gia), AVG(hang_hoa.don_gia), COUNT(hang_hoa.id_loai) FROM hang_hoa 
+        INNER JOIN loai ON hang_hoa.id_loai=loai.id GROUP by loai.id ORDER BY loai.id";
+        $this-> setQuery($sql);
+        return $this -> loadAllRows();
+    }
 }
