@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 /* CSS cho phần heading của trang web */
 
-.heading{
+.heading {
     font-size: 28px;
     color: #F88644;
     text-align: center;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.heading::after{
+.heading::after {
     content: "";
     position: absolute;
     width: 30px;
@@ -20,22 +20,22 @@
 }
 
 /* CSS Cho Login */
-.login-form{
+.login-form {
     width: 25%;
     margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
 
 }
 
-.login-form form{
+.login-form form {
     display: flex;
     /* Dàn các thẻ con thành hàng dọc */
     flex-direction: column;
 }
 
-.login-form form input{
+.login-form form input {
     padding: 15px 15px;
-    border: none ;
+    border: none;
     background-color: #F0F2F5;
     font-family: 'Quicksand', sans-serif;
     outline: none;
@@ -45,11 +45,11 @@
 }
 
 
-.login-form form input:focus{
+.login-form form input:focus {
     border: 1px solid none;
 }
 
-.login-form form button{
+button {
     padding: 5px 20px 5px 20px;
     border-radius: 5px;
     border: 1px solid #F88644;
@@ -57,23 +57,24 @@
     font-weight: bold;
     color: white;
     background: #F88644;
-
+    width: 100%;
+    margin-top: 10px;
 }
 
-.login-form form button:hover{
+.login-form form button:hover {
     background: #F88644;
     color: #fff;
     transition: all .4s linear;
 }
 
-.link-login{
+.link-login {
     display: block;
     text-decoration: none;
     color: #000000;
     margin: 30px 0;
 }
 
-.link-login:hover{
+.link-login:hover {
     color: #24A19C;
     transition: all .4s linear;
 }

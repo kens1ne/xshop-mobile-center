@@ -48,7 +48,7 @@ class m_product extends database
         return $this -> loadAllRows();
     }
     public function get_category_pro($id){
-        $sql = "SELECT * FROM `hang_hoa` WHERE`id_loai` = '$loai'  ";
+        $sql = "SELECT hang_hoa.*, loai.ten_loai FROM hang_hoa INNER JOIN loai ON hang_hoa.id_loai=loai.id WHERE hang_hoa.id_loai=$id";
         $this-> setQuery($sql);
         return $this -> loadAllRows();
     }

@@ -36,7 +36,7 @@
                                         </li>
                                         <?php if(isset($_SESSION['id'])){?>
                                         <li class="header-nav__log-item">
-                                            <a href="#" class="header-nav__log-link"><?=$_SESSION['id']->{'username'};?></a>
+                                            <a href="pro5.php" class="header-nav__log-link"><?=$_SESSION['id']->{'username'};?></a>
                                         </li>
                                         <li class="header-nav__log-item">
                                             <a href="logout.php" class="header-nav__log-link">Đăng xuất</a>

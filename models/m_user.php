@@ -27,4 +27,9 @@ class m_user extends database
         $this->setQuery($sql);
         return $this->execute();
     }
+    public function updatePass($password, $username){
+        $sql = "UPDATE `users` SET `password`='$password' WHERE `username`= '$username'";
+        $this->setQuery($sql);
+        return $this->execute();
+    }
 }

@@ -331,7 +331,7 @@
                                 <ul class="container-nav__list">
                                     <?php foreach( $get_category as $data){?>
                                     <li class="container-nav__item">
-                                        <a href="#" class="container-nav__item-link"><?=$data->{'ten_loai'}?></a>
+                                        <a href="category-page.php?id=<?=$data->{'id'};?>" class="container-nav__item-link"><?=$data->{'ten_loai'}?></a>
                                     </li>
                                     <?php }?>
                                 </ul>
@@ -339,38 +339,9 @@
                         </div>
 
                         <div class="col l-12 m-12 c-12">
-                            <div class="container-filter">
-                                <div class="container-filter__item">
-                                    Giá từ cao đến thấp
-                                    <i class="container-filter__icon-down fas fa-chevron-down"></i>
-                                    <ul class="container-filter__list">
-                                        <li class="container-filter__list-item">
-                                            Giá từ cao đến thấp
-                                        </li>
-                                        <li class="container-filter__list-item">
-                                            Giá từ thấp đến cao
-                                        </li>
-                                    </ul>
-                                </div>
+                            
 
-                                <div class="container-filter__item">
-                                    Bán chạy
-                                    <i class="container-filter__icon-down fas fa-chevron-down"></i>
-                                    <ul class="container-filter__list">
-                                        <li class="container-filter__list-item">
-                                            Bán chạy
-                                        </li>
-                                        <li class="container-filter__list-item">
-                                            Phổ biến
-                                        </li>
-                                        <li class="container-filter__list-item">
-                                            Khuyến mãi
-                                        </li>
-                                        <li class="container-filter__list-item">
-                                            Hàng mới về
-                                        </li>
-                                    </ul>
-                                </div>
+                                
                             </div>
                         </div>
                         <h2 style="color: red;font-size:24px;">HÀNG ĐẶC BIỆT</h2>

@@ -203,6 +203,7 @@
         opacity: 0;
         transform: translateY(-50%);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -560,6 +561,7 @@
         opacity: 0;
         transform: scaleY(0);
     }
+
     to {
         opacity: 1;
         transform: scaleY(1);
@@ -679,7 +681,7 @@
     margin-left: 0%;
 }
 
-.phone-banner__list > a {
+.phone-banner__list>a {
     transition: all linear 0.6s;
 }
 
@@ -766,14 +768,18 @@
     flex-shrink: 0;
 }
 
-.container-nav__item:hover {
+.active-link {
     background-color: var(--primary-color);
     border-radius: 2px;
 }
 
+
+
 .container-nav__item:hover .container-nav__item-link {
     color: var(--white-color);
 }
+
+
 
 .container-nav__item-link {
     display: block;
@@ -781,6 +787,10 @@
     font-size: 1.4rem;
     color: var(--primary-color);
     padding: 12px 16px;
+}
+
+.active-li {
+    color: var(--white-color);
 }
 
 .container-filter__item {
@@ -880,7 +890,7 @@
     opacity: 1;
 }
 
-.container-product__item-heading:hover ~ .container-product-marker__list {
+.container-product__item-heading:hover~.container-product-marker__list {
     display: none;
 }
 
@@ -979,14 +989,14 @@
     font-size: 1.4rem;
     line-height: 1.8rem;
     max-height: 3.6rem;
-    overflow:hidden;
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
 
 .container-product__item-sale-icon {
-    font-size:  3.5rem;
+    font-size: 3.5rem;
     padding: 0 10px;
 }
 
@@ -1054,11 +1064,11 @@
     color: var(--white-color);
 }
 
-.container-product-marker__list.active-marker--hot > .container-product-marker__item--hot {
+.container-product-marker__list.active-marker--hot>.container-product-marker__item--hot {
     display: inline-flex;
 }
 
-.container-product-marker__list.active-marker--new > .container-product-marker__item--new {
+.container-product-marker__list.active-marker--new>.container-product-marker__item--new {
     display: inline-flex;
 }
 
@@ -1198,7 +1208,7 @@
 .footer-place__item-link.footer-place__item-link--highlight {
     color: rgb(198, 154, 57);
 }
-    
+
 .footer-policy__list {
     margin-top: 18px;
     padding-left: 0px;

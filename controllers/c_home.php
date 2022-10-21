@@ -31,7 +31,9 @@ class c_home {
         include ('models/m_product.php');
         $product = new m_product();
         $id_loai = $_GET['id'];
-        $get_products = $product -> get_category($id_loai);
+        $get_category = $product -> get_category();
+        $get_category_pro = $product -> get_category_pro($id_loai);
+        
         $view = "views/home/v_category_page.php";
         include ("templates/front-end/layout.php");
 

@@ -64,9 +64,37 @@ class c_user {
             header("location: detail.php?id=".$id_hh);
         }
     }
+    public function updatePass(){
+        include ("models/m_user.php");
+        $m_user = new m_user();
+        $view = "views/home/v_update_pass.php";
+        include ("templates/front-end/layout.php");
+        //$updatePass= $m_user ->updatePass($password);
+    }
+    public function actionUpdatePass(){
+        $currentPass = $_POST['currentPass'];
+        include("models/m_user.php");
+        $m_user = new m_user();
+        
+        $newPass = $_POST['newPass'];
+        $rePass = $_POST['rePass'];
+        if($currentPass != $_SESSION['id']-> {'password'}){
+            $msg="Mật khẩu hiện tại của bạn không đúng !";
+            header("location: pro5.php?msg=$msg");
+        }else if ($newPass != $rePass){
+            $msg ="Mật khẩu nhập lại không đúng !";
+            header("location: pro5.php?msg=$msg");
+        }else{
+            $msg = "Cập Nhật Thành Công!";
+            $m_user -> updatePass($newPass, $_SESSION['id']->{'username'});
+            header("location: pro5.php?msg=$msg");
+        }
+
+    }
     public function logout() {
         session_destroy();
         header("Location: index.php");
     }
+    
 }
 ?>
