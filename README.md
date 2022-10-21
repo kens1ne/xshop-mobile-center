@@ -1,3 +1,2 @@
 # DuAnMau
-Created by Nguyen Duy Tan
-Telegram : t.me/kens1ne
+Created by Nguyen Duy Tan - PH25572
