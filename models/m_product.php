@@ -42,5 +42,15 @@ class m_product extends database
         $this-> setQuery($sql);
         return $this->execute();
     }
+    public function get_recommend_pro($id,$loai){
+        $sql = "SELECT * FROM `hang_hoa` WHERE`id_loai` = '$loai' AND `id` != '$id' LIMIT 5  ";
+        $this-> setQuery($sql);
+        return $this -> loadAllRows();
+    }
+    public function get_category_pro($id){
+        $sql = "SELECT * FROM `hang_hoa` WHERE`id_loai` = '$loai'  ";
+        $this-> setQuery($sql);
+        return $this -> loadAllRows();
+    }
 
 }

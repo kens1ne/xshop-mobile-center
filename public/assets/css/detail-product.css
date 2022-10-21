@@ -108,3 +108,8 @@ textarea {
     margin: 5px 0 5px 0;
     padding: 8px;
 }
+
+.recommend-pro {
+    display: flex;
+    margin-top: 20px;
+}
