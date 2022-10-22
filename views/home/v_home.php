@@ -315,14 +315,7 @@
                         </div>
 
                         <div class="col l-4 m-0 c-0">
-                            <iframe src="https://www.youtube.com/embed/aAiPZw_OrkQ" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen class="video1"></iframe>
-                            <iframe src="https://www.youtube.com/embed/9HHpOjCya40" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen class="video2"></iframe>
+                        <iframe width="560" height="100%" src="https://www.youtube.com/embed/CHw1b_1LVBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
 
                         <div class="col l-12 m-12 c-12">
