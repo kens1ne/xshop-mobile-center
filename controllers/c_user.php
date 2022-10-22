@@ -66,10 +66,13 @@ class c_user {
     }
     public function updatePass(){
         include ("models/m_user.php");
+        include ("models/m_product.php");
         $m_user = new m_user();
+        $m_product = new m_product();
+        $orderList = $m_product->get_ordered_list($_SESSION['id']->{'id'});
         $view = "views/home/v_update_pass.php";
         include ("templates/front-end/layout.php");
-        //$updatePass= $m_user ->updatePass($password);
+        $updatePass= $m_user ->updatePass($password);
     }
     public function actionUpdatePass(){
         $currentPass = $_POST['currentPass'];
