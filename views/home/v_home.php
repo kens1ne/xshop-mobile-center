@@ -305,6 +305,7 @@
                                         <i class="fas fa-arrow-right phone-banner__btn-next"></i>
                                         <div class="phone-banner__list">
                                             <!-- Thêm danh sách Banner -->
+                                            <img src="public/assets/banner/banner1.jpg" alt="" style="width:100%;">
                                         </div>
                                         <div class="phone-banner-pagination">
                                         </div>

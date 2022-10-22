@@ -1,5 +1,5 @@
 <div class="login-form" style="padding-bottom:50px;">
-    <h2 style="text-align:center;font-size: 40px; color: #F88644">City Shop</h2>
+    <h2 style="text-align:center;font-size: 40px; color: #F88644">X Shop</h2>
     <?php if(isset($_SESSION['error_login'])) {?>
     <h2 style="text-align:center;color: red"><?=$_SESSION['error_login'];?></h2>
     <?php } ?>

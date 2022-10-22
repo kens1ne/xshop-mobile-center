@@ -53,4 +53,9 @@ class m_product extends database
         return $this -> loadAllRows();
     }
 
+    public function get_ordered_list($id){
+        $sql = "SELECT ordered.*,hang_hoa.ten_hh,users.username FROM ordered INNER JOIN users ON ordered.id_kh=users.id INNER JOIN hang_hoa ON ordered.id_sp=hang_hoa.id WHERE id_kh=$id";
+        $this-> setQuery($sql);
+        return $this -> loadAllRows();
+    }
 }
