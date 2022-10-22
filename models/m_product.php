@@ -35,7 +35,7 @@ class m_product extends database
         $this-> setQuery($sql);
         return $this->execute();
     }
-
+    // hàm insert hàng đã mua
     public function purchase($id, $id_kh, $name, $phone, $address){
         $sql = "INSERT INTO `ordered`(`ten_kh`, `id_sp`, `id_kh`,`address`, `sdt`, `status`) 
         VALUES ('$name','$id','$id_kh','$address', '$phone', '0')";

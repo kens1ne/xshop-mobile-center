@@ -23,8 +23,6 @@ class c_home {
         $get_comments = $product -> get_products_comment($id);
         $get_recommend_pro = $product -> get_recommend_pro($get_products-> {'id'},$get_products -> {'id_loai'});
         $view = "views/home/v_detail.php";
-
-
         include ("templates/front-end/layout.php");
     }
     public function category_page(){
