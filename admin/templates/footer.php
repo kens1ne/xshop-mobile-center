@@ -14,7 +14,6 @@
 </div>
 <!-- ./wrapper -->
 
-<script src="public/plugins/jquery/jquery.min.js"></script>
 
 <script src="public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -76,22 +75,8 @@ $(function() {
     });
 
     //-------------
-    //- PIE CHART -
     //-------------
     // Get context with jQuery - using jQuery's .get() method.
-    var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
-    var pieData = donutData;
-    var pieOptions = {
-        maintainAspectRatio: false,
-        responsive: true,
-    }
-    //Create pie or douhnut chart
-    // You can switch between pie and douhnut using the method below.
-    new Chart(pieChartCanvas, {
-        type: 'pie',
-        data: pieData,
-        options: pieOptions
-    })
 });
 </script>
 </body>

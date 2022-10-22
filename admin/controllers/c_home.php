@@ -5,7 +5,13 @@ class c_home {
     }
     
     public function index() {
-        $view = "views/home/v_home.php";
+       include("models/m_home.php");
+       $m_home = new m_home();
+       $totalUser = $m_home->totalUser();
+       $totalView = $m_home->totalView();
+       $totalProduct = $m_home->totalProduct();
+       $totalOrder = $m_home->totalOrder();
+       $view = "views/home/v_home.php";
        include ("templates/layout.php");
     }
 
@@ -48,6 +54,14 @@ class c_home {
         include("models/m_product.php");
         $m_product = new m_product();
         $list = $m_product->analytics();
+        $Categories = [];
+        $Total = [];
+        foreach ($list as $value) {
+            array_push($Categories, $value->{'ten_loai'});
+            array_push($Total, (int)$value->{'COUNT(hang_hoa.id_loai)'});
+        }
+        $categoryList = json_encode($Categories);
+        $totalList = json_encode($Total);
         $view = "views/home/v_analytics.php";
         include ("templates/layout.php");
     }
