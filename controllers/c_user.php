@@ -41,12 +41,13 @@ class c_user {
             $email = addslashes($_POST['email']);
             $password = addslashes($_POST['password']);
             $checkUsername = $user->checkUsername($username);
-            if($checkUsername->{'id'}){
+            if($checkUsername > 0){
                 $_SESSION['error_register'] = 'Tên đăng nhập đã tồn tại, vui lòng thử lại !';
                 header('Location: register.php');
             }else{
                 $register = $user->checkRegister($username,$name, $phone, $email, $password);
-                if($register == true){
+                print_r($register);
+                if($register){
                     $_SESSION['register_success'] = 'Đăng ký thành công, vui lòng đăng nhập';
                     header('Location: login.php');
                 }
@@ -66,10 +67,13 @@ class c_user {
     }
     public function updatePass(){
         include ("models/m_user.php");
+        include ("models/m_product.php");
         $m_user = new m_user();
+        $m_product = new m_product();
+        $orderList = $m_product->get_ordered_list($_SESSION['id']->{'id'});
         $view = "views/home/v_update_pass.php";
         include ("templates/front-end/layout.php");
-        //$updatePass= $m_user ->updatePass($password);
+        $updatePass= $m_user ->updatePass($password);
     }
     public function actionUpdatePass(){
         $currentPass = $_POST['currentPass'];

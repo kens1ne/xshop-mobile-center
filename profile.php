@@ -4,4 +4,7 @@
     include ("controllers/c_user.php");
     $pro5 = new c_user();
     $pro5 -> updatePass();
+ }else{
+   header("Location: login.php");
  }
+

@@ -3,7 +3,7 @@ include_once ("database.php");
 class m_user extends database {
     //
     public function read_user_by_id_pass($username,$password) {
-        $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password'";
+        $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password' AND `admin` = 1";
         $this->setQuery($sql);
         return $this->loadRow(array($username,$password));
         //gọi và xử lý tính năng đăng nhập nếu thành công thì hiển thị ra 123 rồi dừng

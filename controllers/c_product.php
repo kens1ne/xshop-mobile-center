@@ -14,7 +14,6 @@ class c_product {
         $data = $m_product->get_products_info($id);
         $view = "views/product/v_cart.php";
         include ("templates/front-end/layout.php");
-
     }
 
     public function actionBuy(){
