@@ -9,17 +9,16 @@ class m_user extends database
     }
 
     public function checkRegister($username, $name, $phone, $email, $password){
-            $sql = "INSERT INTO `users`(`name`, `username`, `password`, `email`, `phone`, `active`, `rule`) 
+            $sql = "INSERT INTO `users`(`name`, `username`, `password`, `email`, `phone`, `active`, `admin`) 
             VALUES ('$name', '$username', '$password', '$email', '$phone', '1', '0')";
             $this->setQuery($sql);
-            $this->execute(array($username,$name,$phone,$email,$password));
-            return true;
+            return $this->execute();
     }
 
     public function checkUsername($username){
         $sql = "SELECT * FROM `users` WHERE `username`='$username'";
         $this->setQuery($sql);
-        return $this->loadRow(array($username));
+        return $this->loadRow();
     }
 
     public function insertCmt($comment,$id_hh,$id_kh){
